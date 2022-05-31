@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(229, 234, 248);
+  padding: 10px 0;
+  font-family: 'Roboto Flex', sans-serif;
+}
+
+.wrapper {
+  width: 550px;
+  height: 900px;
+  margin: auto;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  display: block;
+  width: 100px;
+}
+
+.name>div>h1 {
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.name>div>p {
+  padding-top: 3px;
+  padding-left: 22px;
+  font-size: 13px;
+  color: gray;
+}
+
+header>.info {
+  padding-top: 15px;
+}
+
+ul {
+  /* padding-top:10px; */
+  font-size: 11px;
+  line-height: 20px;
+  margin-left: 25px;
+}
+
+span.dane {
+  font-weight: 800;
+}
+
+i {
+  color: dodgerblue;
+}
+
+/* MAIN */
+
+main>div {
+  margin-bottom: 27px;
+}
+
+h2 {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+h3>span {
+  font-size: 17px;
+  margin-left: 8px;
+}
+
+main>div>p,
+main>div>div>p {
+  font-size: 11px;
+  line-height: 16px;
+}
+
+.hobby {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+main>div>h2 {
+  width: 100%;
+}
+
+main>div>div {
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: white;
+    padding: 0;
+  }
+
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 20px;
+    border-radius: 0;
+  }
+}
